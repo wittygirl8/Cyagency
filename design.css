@@ -1,0 +1,490 @@
+body{
+   font-family: 'Nunito', sans-serif;
+}
+
+.intro,.lead{
+    margin-left:10px
+}
+.card-jumbo-hover:hover,.footer-heads a,.list a{
+    text-decoration:none
+}
+.card-btn,.contact{
+    text-transform:uppercase
+}
+.top-scroll{
+    position:fixed;
+    bottom:22px;
+    right:93px;
+    font-size:45px;
+    color:#CF1717;
+    z-index:1000
+}
+.card-jumbo,.cols,.intro,.lead{
+    color:#fff
+}
+.video-container{
+    position:relative;
+    bottom:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    background:#000
+}
+.video-container .filter{
+    z-index:100;
+    position:absolute;
+    background:rgba(0,0,0,.4);
+    width:100%;
+    height:100%
+}
+.video-container .poster img{
+    width:100%;
+    bottom:0;
+    position:absolute
+}
+.video-container video{
+    position:absolute;
+    z-index:0;
+    bottom:0;
+    width:100%
+}
+.video-container .hidden-img{
+    position:absolute;
+    z-index:0;
+    bottom:0;
+    left:-139%
+}
+.video-container video.fillWidth{
+    width:100%
+}
+.intro{
+    margin-top:141px;
+    font-size:44px;
+    font-weight:500;
+    text-align:left
+}
+.lead{
+    margin-top:22px;
+    font-size:22px;
+    line-height:28px
+}
+.search-btn{
+    border:1px solid #e85517;
+    background-color:transparent;
+    color:#fff;
+    margin:20px 0 40px 10px;
+    cursor:pointer
+}
+.card-jumbo{
+    background:rgba(0,0,0,.6);
+    padding:20px
+}
+.card-btn,.card-btn:hover{
+    border:2px solid #e85517;
+    background-color:#e85517
+}
+.card-jumbo p{
+    margin-top:10px;
+    font-size:15.5px;
+    letter-spacing:1.5px;
+    font-weight:300
+}
+.big-banner-btn,.card-btn,.read-btn{
+    letter-spacing:.16em
+}
+.product{
+    margin-bottom:45px
+}
+.threat-features p{
+    font-size:15px;
+    line-height:19px;
+    margin-top:5px;
+    font-weight:500
+}
+.card-btn{
+    color:#fff!important;
+    padding:9px 26px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:12px;
+    margin-top:45px
+}
+.card-btn:hover{
+    color:#fff
+}
+.headings h6{
+    font-size:30px;
+    margin-top:55px;
+    color:#2B2C2D;
+    margin-bottom:20px
+}
+.headings p{
+    font-size:16px;
+    color:#7E8890
+}
+.services{
+    padding:12px
+}
+.service-area{
+    padding-top:70px;
+    padding-bottom:50px
+}
+.card-title{
+    font-size:13px;
+    color:#656565;
+    padding:7px;
+    text-align:center;
+    margin-top:8px
+}
+.read-btn{
+    width:100%;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    color:#fff;
+    background-color:#212121;
+    font-size:12px
+}
+.services-card{
+    text-align:center;
+    height:128px;
+    border-right:1px solid #D7D7D7
+}
+.footer{
+    background-color:#000
+}
+.footer-heads a{
+    color:#fff;
+    margin-right:32px;
+    font-size:16px;
+    font-weight:500
+}
+.footer-heads p{
+    color:#fff;
+    font-size:15px;
+    margin-top:13px;
+    text-align:justify
+}
+.social-links li{
+    display:inline-block;
+    margin:0 15px;
+    border-bottom:1px solid #fff;
+    padding-bottom:8px;
+    width:24px;
+    text-align:center
+}
+.social-links li a{
+    color:#A8A8A8;
+    font-size:22px;
+    line-height:50px;
+    border-radius:50%;
+    text-align:center
+}
+.social-links li a:hover{
+    color:#79BA11
+}
+.members img{
+    margin-left:15px
+}
+.members{
+    padding-top:18px;
+    text-align:right
+}
+.members p{
+    color:#fff;
+    font-size:13px;
+    margin-bottom:7px;
+    margin-left:76px;
+    text-align:left
+}
+#contact p,.list a,.widget-2{
+    font-size:14px
+}
+.address{
+    text-align:left;
+    margin-left:41px
+}
+#contact p{
+    margin:0;
+    color:#A8A8A8
+}
+.widget{
+    margin-top:20px
+}
+.list a{
+    color:#A8A8A8
+}
+.list a:hover{
+    color:#fff
+}
+ul{
+    list-style-type:none;
+    padding:0
+}
+.widget-3{
+    margin-top:-5px;
+    text-align:right
+}
+.big-banner{
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:0;
+    position:relative;
+    z-index:1;
+    padding:0;
+    height:auto;
+    background-image:url(../images/photo.jpg);
+    margin-top:39px
+}
+.wrapper{
+    background:rgba(0,0,0,.4);
+    padding:72px 0 95px
+}
+.big-banner:after,.big-banner:before{
+    content:'';
+    width:50%;
+    height:100px;
+    position:absolute;
+    top:-48px;
+    background:#fff;
+}
+.big-banner:before{
+    left:0;
+    transform:skewY(-7deg)
+}
+.big-banner:after{
+    right:0;
+    transform:skewY(+7deg)
+}
+.big-banner-btn{
+    color:#fff;
+    background-color:#D6020E;
+    font-size:13px;
+    margin-top:30px;
+    cursor:pointer
+}
+.big-banner h6{
+    color:#fff;
+    margin-top:118px;
+    font-size:42px;
+    margin-left:10px;
+    font-weight:400
+}
+.big-banner p{
+    color:#fff;
+    font-size:23px;
+    font-weight:300
+}
+.client-card{
+    padding:35px;
+    text-align:center
+}
+.client-card img{
+    width:128px
+}
+.testimonial-heading{
+    text-align:center;
+    color:#fff;
+    font-size:23px;
+    font-weight:400
+}
+.carousel{
+    height:380px;
+    background: linear-gradient(180deg,#f07155,#ff8f59);
+    background-size:cover;
+    margin-bottom:125px;
+    margin-top:40px;
+    padding-top:30px
+}
+.carousel-item{
+    height:380px;
+    background:0 0
+}
+.carousel-indicators .active{
+    background-color:#3581D8
+}
+.carousel-indicators li{
+    background-color:grey;
+    width:46px
+}
+.carousel-caption{
+    top:7%;
+    right:20%;
+    left:20%;
+    line-height:27px;
+    background-color:#fff;
+    box-shadow:0 4px 5px grey;
+    padding:35px 36px 0 57px;
+    text-align:justify
+}
+.carousel-caption img{
+    max-width:100%;
+    height:auto;
+    padding-top:47px
+}
+.carousel-caption h5{
+    margin-top:25px;
+    font-size:15px;
+    font-weight:500;
+    margin-bottom:20px;
+    color:#555
+}
+.carousel-caption p{
+    font-size:15px;
+    font-weight:400;
+    line-height:24px;
+    color:#9A9A9A
+}
+form{
+    padding:20px;
+    border-radius:8px
+}
+.form-control{
+    margin-bottom:15px
+}
+.form-title{
+    font-size:35px;
+    margin-bottom:28px
+}
+.contact{
+    text-align:center;
+    font-size:30px;
+    color:#fff;
+    margin-bottom:20px;
+    font-weight:300
+}
+.contact-banner{
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:0;
+    position:relative;
+    z-index:1;
+    padding:35px 0;
+    height:auto;
+    background-position:50% 0;
+    background-image:url(../images/446.jpg);
+    margin-top:39px;
+    margin-bottom:0
+}
+.contact-main{
+    margin-top:265px
+}
+
+
+
+.threat-video{
+    background: linear-gradient(180deg,#f07155,#ff8f59);
+    padding:50px;
+    margin-bottom: 80px;
+}
+
+.threat-text{
+    color: white;
+    font-size: 50px;
+}
+
+
+
+
+@media (max-width:450px){
+    .navbar{
+        background-color:#fff
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color:#000
+    }
+    .dropdown-menu .row{
+        display:block
+    }
+    .navbar-expand-sm .navbar-nav .dropdown-menu{
+        margin-left:0
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+        color:#000;
+        transition-duration:.4s
+    }
+    .carousel-caption img{
+        padding-top:0
+    }
+    .carousel-caption{
+        padding:15px 23px 0;
+        right:11%;
+        left:10%
+    }
+    .carousel-caption p{
+        font-size:14px;
+        line-height:20px
+    }
+    .carousel-caption h5{
+        text-align:center
+    }
+    .carousel-indicators li{
+        background-color:grey;
+        width:46px;
+        display:none
+    }
+    .headings h6{
+        font-size:20px;
+        font-weight:500;
+        color:555555
+    }
+    .big-banner{
+        margin-top:64px
+    }
+    .big-banner h6{
+        margin-top:42px;
+        font-size:30px
+    }
+    .big-banner p{
+        font-size:19px
+    }
+    .services-card{
+        border-right:none
+    }
+    .service-area{
+        padding-bottom:0
+    }
+    .contact-main{
+        margin-top:130px
+    }
+    .address,.members,.members p,.social-links,.widget,.widget-2 p{
+        text-align:center;
+        margin-left:0
+    }
+    .client-card{
+        padding:15px
+    }
+    .footer-heads a,.footer-heads p{
+        padding:10px
+    }
+    .footer-heads,.footer-heads a{
+        text-align:center;
+        margin-right:0;
+        display:block
+    }
+    .demo-btn{
+        margin-left:30px;
+        margin-top:30px
+    }
+    .blog{
+        margin-bottom:13px
+    }
+
+    .threat-video iframe{
+   height: 250px;
+   }
+ 
+    .threat-video{
+          padding: 32px 8px 30px 8px;
+    }
+ 
+
+.threat-text{
+   color: white;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+}

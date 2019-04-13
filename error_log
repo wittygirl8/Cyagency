@@ -1,0 +1,1 @@
+[04-Jan-2019 10:26:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/truthnavy/public_html/more/index.html:694) in /home/truthnavy/public_html/more/contact.php on line 18

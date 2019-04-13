@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Training | Cyagency</title>
+
+    <link rel="stylesheet" href="assets/css/loading.css" type="text/css">
+
+    <!-- Site Fav Icon -->
+   
+    <link rel="shortcut icon" href="assets/img/icons/favicon2.ico">
+   
+
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/animate.css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/Swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/jPushMenu/css/jPushMenu.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/owl.carousel/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/owl.carousel/owl.theme.default.min.css" type="text/css">
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+	<!--New Files-->
+	<script src="js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: false,
+              $AutoPlaySteps: 4,
+              $SlideDuration: 160,
+              $SlideWidth: 114,
+			  $SlideHeight: 124,
+              $SlideSpacing: 25,
+              $Cols: 5,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 4
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 1,
+                $SpacingY: 1
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 809);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+	<style>
+        /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 12px;
+            background: url('img/b03.html') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb03 div { background-position: -5px -4px; }
+        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+        .jssorb03 .av { background-position: -65px -4px; }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+        /* jssor slider arrow navigator skin 03 css */
+        /*
+        .jssora03l                  (normal)
+        .jssora03r                  (normal)
+        .jssora03l:hover            (normal mouseover)
+        .jssora03r:hover            (normal mouseover)
+        .jssora03l.jssora03ldn      (mousedown)
+        .jssora03r.jssora03rdn      (mousedown)
+        .jssora03l.jssora03ldn      (disabled)
+        .jssora03r.jssora03rdn      (disabled)
+        */
+        .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('../img/a03.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+        .jssora03l.jssora03lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+        .jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+    </style>
+	<link href="training/css/bootstrap.min.css" rel="stylesheet">
+	<link href="training/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="training/css/custom_new3860.css?v=1" rel="stylesheet">
+
+		<link rel="stylesheet" href="training/css/owl.carousel.css">
+
+		<link rel="stylesheet" href="training/css/owl.theme.css">
+
+		<link rel="stylesheet" href="training/css/fpslineicons.css">
+
+		<link href="training/css/ninja-slider.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" type="text/css" href="training/css/style.css" />
+
+		<link rel="stylesheet" type="text/css" href="training/css/elastislide.css" />
+		<link rel="stylesheet" href="training/css/jquery.fancybox8cbb.css?v=2.1.5" type="text/css" media="screen" />
+	
+	<link rel="stylesheet" href="training/css/animate.min.css">
+	<script src="training/js/ie-emulation-modes-warning.js"></script>
+	<noscript>
+
+			<style>
+
+				.es-carousel ul{
+
+					display:block;
+
+				}
+
+			</style>
+
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+
+			<div class="rg-image-wrapper">
+
+				{{if itemsCount > 1}}
+
+					<div class="rg-image-nav">
+
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+
+					</div>
+
+				{{/if}}
+
+				<div class="rg-image"></div>
+
+				<div class="rg-loading"></div>
+
+				<div class="rg-caption-wrapper">
+
+					<div class="rg-caption" style="display:none;">
+
+						<p></p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</script>
+		
+		
+		<style>
+
+			.bx-wrapper .testimonials-thumbnail{ margin: 0px 0px 15px; }
+
+			.bx-wrapper .testimonials-title{ text-align: center;  margin: 25px 15px 3px; font-size: 24px; line-height: 1; }
+
+			.bx-wrapper .testimonials-carousel-thumbnail{ max-width: 35%; float: left; margin-right: 20px; }
+
+			.bx-wrapper .testimonials-carousel-thumbnail img{ display: block;   margin-right: 20px;width: 100px;}
+
+			.bx-wrapper .testimonials-carousel-context{ overflow: hidden; }
+
+			.bx-wrapper .testimonials-name{ font-size: 18px; margin-bottom: 15px; color:#0072cf; font-weight:400;}
+
+			.bx-wrapper span{ margin-left:10px; color:#6F7986; font-family: 'Nunito';font-size: 14px; }
+
+			.bx-wrapper {position: relative;margin: 30px auto;padding: 0;width:100%;*zoom: 1;}
+
+			.bx-wrapper .slide {padding:0;margin:0;display: block;}
+
+			.bx-wrapper .bx-viewport {padding:10px;margin-left:0;z-index:1;width:100%;}
+
+			.bx-wrapper .bx-pager,
+
+			.bx-wrapper .bx-controls-auto {position: absolute;display:none;bottom: -30px;width: 100%;}
+
+			.bx-wrapper .bx-loading {min-height: 50px;background: url(../images/bx_loader.html) center center no-repeat #fff;height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 2000;}
+
+			.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-weight: bold;color: #666;padding-top: 20px;}
+
+			.bx-wrapper .bx-pager .bx-pager-item,
+
+			.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+
+			.bx-wrapper .bx-pager.bx-default-pager a {background: #666;text-indent: -9999px;display: block;width: 10px;height: 10px;margin: 0 5px;outline: 0;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+
+			.bx-wrapper .bx-pager.bx-default-pager a:hover,
+
+			.bx-wrapper .bx-pager.bx-default-pager a.active {background: #000;}
+
+			.bx-wrapper .bx-next {position: absolute;top: 0;right: 0;width: 30px;border-left:1px solid #ddd;height: 30px;cursor: pointer;background: #0072cf url(../images/caousel-next.png) no-repeat 0 0 ;}
+
+			.bx-wrapper .bx-prev {position: absolute;top: 0px;right: 30px;border-right:1px solid #ddd;width: 30px;height: 30px;cursor: pointer;background: #0072cf url(../images/caousel-prev.png) no-repeat 0 0 ;}
+
+			.bx-wrapper .bx-controls-direction a {position: absolute;top: 0;margin-top: 0;margin-right: 0px;outline: 0;width: 30px;height: 30px;text-indent: -9999px;z-index: 9999;}
+
+
+
+			.testimonials-carousel-content{ font-family: font-family: 'Nunito';font-size: 14px; text-align:justify;}
+
+
+
+			</style>
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Nunito';font-size: 14px;
+}
+</style>
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+    <!-- Start Loading page -->
+    <div class="loading">
+        <div class="loading-wrapper">
+            <div class="rec r1"></div>
+            <div class="rec r2"></div>
+            <div class="rec r3"></div>
+            <div class="rec r4"></div>
+            <div class="rec r5"></div>
+        </div>
+    </div>
+    <!-- End Loading page -->
+
+    <div id="site">
+
+
+        <!--==============================-->
+        <!--=        Site Header         =-->
+        <!--==============================-->
+        <section id="dt-header">
+            <div id="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="top-contact-info">
+                                
+                            </ul>
+                            <!-- /.top-contact -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                            <ul class="dt-social-link">
+                               <li><a href="https://www.facebook.com/cyagency"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="https://www.twitter.com/cybersecurity55"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/cyagency"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/cyagency"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /#top-menu -->
+            <div id="navigation-menu">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+
+                                <div class="menu-toggle" data-dt-toggle="menu-slide" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!-- /.menu-toggle -->
+                                <a class="brand-logo" href="index.html">
+                                      <img src="assets/img/c2.png" height="60px" width="260px" alt="" class="transparent-logo">
+                                    <img src="assets/img/main_logo_two.png" alt="" class="normal-logo">
+                                </a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right" style="
+    padding-top:15px;
+">
+<li>
+                                        <a style="color:white; font-size:19px;" href="index.html">Home</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a style="color:white; font-size:19px;" href="#">Services</a>
+                                        <ul style="
+    width: 350px;
+"class="child-menu">
+                                                                                        <li><a href="services.html">Web Application Security Testing  </a></li>
+                                            <li><a href="services1.html">Mobile Application Security Testing</a></li>
+											<li><a href="services2.html">Network Security Testing  </a></li>
+											<li><a href="services3.html">Secure Code Analysis</a></li>
+											<li><a href="services4.html">Analyze Current Risk Level of Company </a></li>
+											<li><a href="services5.html">Annual Security Audit</a></li>
+											  
+                                        </ul>
+                                    </li>
+									<li>
+                                        <a style="color:white; font-size:19px;" href="training.html">Training/Workshops</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a style="color:white; font-size:19px;" href="http://www.cyagency.com">Blog</a>
+                                        
+                                    </li>
+                                    <li ><a style="color:white; font-size:19px;" href="contact.html">Contact us</a></li>
+                                  
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /#navigation-menu -->
+        </section>
+        <!-- /#site-example-section -->
+
+               <!--================================-->
+        <!--=        Mobile Header         =-->
+        <!--================================-->
+        <div id="mobile-header">
+             <a style="color:white; font-size:25px;"class="main-logo" href="index.html">CYAGENCY</a>
+            <div class="menu-container">
+                <div class="menu-toggle toggle-menu menu-right push-body">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- /.menu-toggle -->
+            </div>
+            <!-- /#menu-container -->
+        </div>
+        <!-- /#mobile-header -->
+        <div id="mobile-wrapper" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+            <div class="mobile-menu-container">
+
+             
+
+                <hr>
+
+                <nav id="accordian">
+                    <ul class="accordion-menu">
+                        <li>
+                            <a href="index.html" class="single-link"> Home
+					</a>
+
+                        </li>
+                        <li>
+                            <a href="#0" class="dropdownlink">Services
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</a>
+                            <ul class="submenuItems">
+                                            <li><a href="services.html">Web Application Security Testing  </a></li>
+                                            <li><a href="services1.html">Mobile Application Security Testing</a></li>
+											<li><a href="services2.html">Network Security Testing  </a></li>
+											<li><a href="services3.html">Secure Code Analysis</a></li>
+											<li><a href="services4.html">Analyze Current Risk Level of Company </a></li>
+											<li><a href="services5.html">Annual Security Audit</a></li>
+											  
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="training.html" class="single-link"> Training/Workshops
+						
+					</a>
+                           
+                        
+                            <a href="http://www.cyagency.com" class="single-link"> Blog
+					</a>
+                           
+                        </li>
+
+                        <li class="single-link"><a href="contact.html">Contact us</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.menu-container -->
+        </div>
+        <!-- /#mobile-wrapper -->
+        <!--=========================-->
+        <!--=        Banner         =-->
+        <!--=========================-->
+                <section class="page-banner" data-bg-image="assets/img/s2.jpg">
+            <div class="container">
+
+                <!-- /.banner-title -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.service-page -->
+		
+		<div style="background-color: #fff;" style="
+    padding-bottom: 0px;
+">
+		
+		<section id="about-course" class="padding-top-70 padding-bottom-70">
+			<div class="container">
+				<div class="row">
+					<div class="">
+						<div class="course-title col-md-12 courses">
+							<h3>About Workshop</h3>
+						</div>
+						<div class="course-description">
+							<div class="col-md-4 padding-right-20">
+								<img src="training/img/image-1.jpg" alt="" style="width: 250px;border:0px;padding-left: 0px;margin-left: 40px;" class="img-responsive">
+							</div>
+							<div style="text-align:justify;" class="col-md-8">
+								<p></p>
+								<p>A workshop on &quot;ETHICAL HACKING &amp; CYBER SECURITY&quot; presented by CYAGENCY .</p>
+<p>Ethical Hacking and VAPT (vulnerability assessment and penetration testing) course is an exceptional kick-off for
+aspiring students to become a Cyber Security Expert in any successful IT firm all over the world.</p>
+<p>For VAPT, you need to think like a Hacker and CYAGENCY will focus on both VAPT and Ethical Hacking during the course
+of the workshop as the two days workshop is particularly designed for the students who want to build a career in this
+field .We will teach students to expose all the security defects/breach present in the application by actually performing
+the attack and train how to provide solutions to defects.</p>
+
+
+								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="benefits-course"  class="padding-top-70 padding-bottom-70 bg-grey" style="
+    padding-top: 0px;>
+">
+			<div class="container">
+				<div class="row">
+					<div class="white-bg">
+						<div class="course-title col-md-12 courses">
+							<h3>Workshop Benefits</h3>
+						</div>
+						<div class="course-description">
+							<div class="col-md-4 padding-right-20">
+								<img src="training/img/image-2.jpg" alt="" style="width: 250px;border:0px;padding-left: 0px;margin-left: 40px;" class="img-responsive">
+							</div>
+							<div class="col-md-8">
+								<ul class="ul-custom">
+									<li>
+										<p>
+											1. Exposure to Advanced Hacking and Penetration testing Tools.
+										</p>
+									</li>
+									<li>
+										<p>
+											2. A Complete Idea to build a path of becoming a Cyber Expert. 
+										</p>
+									</li>
+									<li>
+										<p>
+											3. How to think like a Hacker and secure yourself .
+										</p>
+									</li>
+									<li>
+										<p>
+											4. Career guidance and scope of cyber security by experienced faculty.
+										</p>
+									</li>
+									<li>
+										<p>5. Each student will get Certificate of Participation from CYAGECNY.
+										</p>
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="course-info" style="
+    padding-top: 0px;
+" class="padding-top-70 padding-bottom-70 bg-grey">
+			<div class="container">
+				<div class="row">
+					<div class="padding-top-20 padding-bottom-20 margin-bottom-40 background-color-green text-center">
+						<h3>WORKSHOP DURATION : 2 DAYS (14 HOURS)</h3>
+					</div>
+					<div class="white-bg">
+						<div class="course-description">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#topics" aria-controls="topics" role="tab" data-toggle="tab">Topics</a>
+								</li>
+								<li role="presentation">
+									<a href="#prerequisite" aria-controls="prerequisite" role="tab" data-toggle="tab">Prerequisite</a>
+								</li>
+								<li role="presentation">
+									<a href="#material" aria-controls="material" role="tab" data-toggle="tab">Course Material</a>
+								</li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="topics">
+									<div class="course-title col-md-12 courses">
+										<h3>Topics To Be Covered</h3>
+									</div>
+									<ul class="ul-custom course-description" style="padding:20px;">
+										<li>
+											<p>Fundamental of Ethical Hacking</p>
+										</li>
+										<li>
+											<p>Virtualization & System Cloning</p>
+										</li>
+										<li>
+											<p>Windows Hacking & Security (Win 8 & Win 7)</p>
+										</li>
+										<li>
+											<p>Online Cloud Computer Development</p>
+										</li>
+										<li>
+											<p>Data Hiding Techniques & Investigation</p>
+										</li>
+										<li>
+											<p>Hacking By Batch Programming & Scripting</p>
+										</li>
+										<li>
+											<p>Hacking by Viruses, Trojans, Keyloggers & Spywares</p>
+										</li>
+										<li>
+											<p>Google Database Hacking</p>
+										</li>
+										<li>
+											<p>Proxy Server & VPN Technologies</p>
+										</li>
+										<li>
+											<p>Email Hacking & Security Issues</p>
+										</li>
+										<li>
+											<p>Facebook Hacking & Security</p>
+										</li>
+										<li>
+											<p>Website & Database Hacking Attacks</p>
+										</li>
+										<li>
+											<p>Android Hacking & Security</p>
+										</li>
+										<li>
+											<p>Credit Card Frauds & Cases</p>
+										</li>
+										<li>
+											<p>Case Study ( Live Demo By   Team )</p>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="prerequisite">
+									<div class="course-title col-md-12 courses">
+										<h3>PREREQUISITE FOR WORKSHOP</h3>
+									</div>
+									<ul class="ul-custom course-description" style="padding:20px;">
+										<li>
+											<p>Passion to learn new creative things.</p>
+										</li>
+										<li>
+											<p>Knowledge of how to use Computer. </p>
+										</li>
+										<li>
+											<p>Having basic knowledge of Web & Internet.</p>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="material">
+									<div class="course-title col-md-12 courses">
+										<h3>COURSE MATERIAL</h3>
+									</div>
+									<ul class="ul-custom course-description" style="
+    padding-bottom: 0px;
+">
+										<li>
+											<p>Comprehensive course material (E-Book) will be provided to participants.</p>
+										</li>
+										<li>
+											<p>Ethical Hacking Toolkit (Containing Tools, Videos, Ebooks, Presentations) </p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="purpose" style="
+    padding-bottom: 0px;
+    padding-top: 0px;
+" class="padding-top-70 padding-bottom-70">
+			<div class="container">
+				<div class="row">
+					<div class="padding-top-20 padding-bottom-20 margin-bottom-40 background-color-green text-center">
+						<h3>Technology trust is a good thing, but control is a better one.</h3>
+					</div>
+					<div class="white-bg">
+						<div class="">
+							<div class="course-title col-md-12 courses">
+								<h3>Who Could Attend ?</h3>
+							</div>
+							<ul class="ul-custom course-description" style="padding:20px;">
+								<li>
+									<p>Any person with basic knowledge on computer and interest towards Information Security / Cyber Security Domain can attend this workshop.</p>
+								</li>
+
+
+	<li>
+	<p>Any Engineering student of any year and any branch is eligible for this workshop.</p>
+	</li>
+	<li>
+	<p>College teaching staff &amp; faculties and workshop coordinators.</p>
+	</li>
+
+
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+        
+        <!--=========================-->
+        <!--=        Footer         =-->
+        <!--=========================-->
+         <div id="footter">
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="dt-address">
+                                <div class="brand-logo" >
+                         <p style="color:white;width: 330px; text-align:justify; font-size:14px;"><br>CYAGENCY PVT. LTD. proffer digital firms with advanced vulnerability assessment and pen testing solutions to protect their firm from external cyber attacks. We use both automated and manual testing procedures to carry out the process as to cover all corners of the application.
+
+                         </p>
+                                </div>
+                                <!-- /.brand-logo -->
+                                
+                                    
+          
+                                <ul class="address">
+                                    <li>
+                                        <i class="fa fa-map-marker"></i> Address: 606, Housing Board Colony</br>Sector 51, Gurugram, India
+                                    </li>
+                                    <li><i class="fa fa-phone"></i>+918884937709</li>
+                                    <li><i class="fa fa-envelope"></i>info@cyagency.com</li>
+                                </ul>
+                                <ul class="dt-social-link">
+                                   <li><a href="https://www.facebook.com/cyagency"><i class="fa fa-facebook"></i></a></li>
+                                     <li><a href="https://www.twitter.com/cybersecurity55"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/c/cyagency"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/cyagency"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /.dt-address -->
+                        </div>
+                        <!-- /.col-md-3 -->
+                        <div class="col-md-3"><br>
+                            
+                        </div>
+                        <!-- /.col-md-3 -->
+                        <div class="col-md-4">
+                           <br>
+                            <h3 class="footer-title">Our Services</h3>
+                            <!-- /.footer-title -->
+                            <ul class="dt-service-menu">
+                                <li><a href="services.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Web Application Security Testing </a></li>
+                                <li><a href="services1.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Mobile Application Security Testing</a></li>
+                                <li><a href="services2.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Network Security Testing</a></li>
+                                <li><a href="services3.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Secure Code Analysis</a></li>
+                                <li><a href="services4.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Analyze Current Risk Level of Company</a></li>
+                                <li><a href="services5.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Annual Security Audit</a></li>
+								
+                            </ul>
+                            <!-- /.dt-service-menu -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-2"><br>
+                            <h3 class="footer-title">Quick Links</h3>
+                            <!-- /.footer-menu -->
+                            <ul class="footer-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="training.html">Training/Workshops</a></li>
+                                <li><a href="http://www.cyagency.com">Blog</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                       
+                        <!-- /.col-md-2 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.footer-wrapper -->
+            <div class="copyright-bar">
+                <div class="container">
+                    <p>CYAGENCY &copy; 2018</p>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.copyright-bar -->
+        </div>
+        <!-- /#footter -->
+        <!-- /#footter -->
+
+
+
+    </div>
+    
+
+    <!-- Dependency Scripts -->
+    <script src="dependencies/jquery/jquery.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dependencies/Swiper/js/swiper.min.js"></script>
+    <script src="dependencies/wow/wow.min.js"></script>
+    <script src="dependencies/countUp.js/countUp.min.js"></script>
+    <script src="dependencies/owl.carousel/js/owl.carousel.min.js"></script>
+    <script src="dependencies/jquery.appear.bas2k/jquery.appear.js"></script>
+    
+    <script src="dependencies/gmap3/gmap3.min.js"></script>
+    <script src="dependencies/jPushMenu/jPushMenu.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+
+    <!-- Site Scripts -->
+
+    <script src="assets/js/app.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ae1e88f227d3d7edc24c31d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+</body>
+
+
+
+</html>
